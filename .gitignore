@@ -1,1 +1,84 @@
-/.idea/
+### General ###
+*.log
+*.tmp
+*.swp
+*.DS_Store
+Thumbs.db
+
+### Maven (Backend) ###
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### Spring ###
+HELP.md
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### STS (Spring Tool Suite) ###
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Node (Frontend) ###
+frontend/node_modules/
+frontend/.pnp/
+frontend/.pnp.js
+frontend/coverage/
+frontend/build/
+frontend/dist/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+### Docker ###
+*.pid
+*.seed
+*.pid.lock
+
+### Kubernetes ###
+# Don't ignore manifests in k8s/ folder
+# Ignore kubeconfig if you export it here
+kubeconfig.yaml
+
+### Terraform ###
+*.tfstate
+*.tfstate.*
+.crash
+*.tfvars
+*.terraform/
+.terraform.lock.hcl
+
+### Logs ###
+logs/
+*.log
+*.out
+*.err
+
+### OS-Specific ###
+ehthumbs.db
+Icon?
+.DS_Store
