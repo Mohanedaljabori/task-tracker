@@ -1,18 +1,29 @@
-### General ###
-*.log
-*.tmp
-*.swp
-*.DS_Store
-Thumbs.db
+### Node / Frontend ###
+frontend/node_modules/
+frontend/.pnp/
+frontend/.pnp.js
+frontend/coverage/
+frontend/build/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-### Maven (Backend) ###
+### Backend / Java / Spring Boot ###
 target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### Spring ###
-HELP.md
+*.class
+*.log
+*.jar
+*.war
+*.iml
+*.ipr
+*.iws
+!.mvn/wrapper/maven-wrapper.jar
 
 ### IntelliJ IDEA ###
 .idea/
@@ -20,57 +31,27 @@ HELP.md
 *.iml
 *.ipr
 
-### STS (Spring Tool Suite) ###
-.apt_generated/
-.classpath
-.factorypath
-.project
-.settings/
-.springBeans
-.sts4-cache
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
-
-### Node (Frontend) ###
-frontend/node_modules/
-frontend/.pnp/
-frontend/.pnp.js
-frontend/coverage/
-frontend/build/
-frontend/dist/
-frontend/.env.local
-frontend/.env.development.local
-frontend/.env.test.local
-frontend/.env.production.local
-
 ### Docker ###
 *.pid
 *.seed
 *.pid.lock
 
+### Docker Desktop / Compose ###
+docker-compose.override.yml
+.env.*  # optional: ignore any extra env files you might use for Docker
+
 ### Kubernetes ###
-# Don't ignore manifests in k8s/ folder
-# Ignore kubeconfig if you export it here
 kubeconfig.yaml
+*.kube/
+*.kustomize/
 
 ### Terraform ###
 *.tfstate
 *.tfstate.*
-.crash
 *.tfvars
 *.terraform/
 .terraform.lock.hcl
+crash.log
 
 ### Logs ###
 logs/
@@ -78,7 +59,11 @@ logs/
 *.out
 *.err
 
-### OS-Specific ###
+### OS ###
+.DS_Store
+Thumbs.db
 ehthumbs.db
 Icon?
-.DS_Store
+
+### VS Code ###
+.vscode/
